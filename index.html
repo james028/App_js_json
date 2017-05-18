@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>App</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <<body onload="fetchTrips()">
+      
+      <div class="container">
+        <div class="row">
+            <h2>Lorem Ipsum</h2>
+            <div class="col-md-8 col-md-offset-2">
+                <div class="main-app">
+                    <form id="mainInput">
+                        <div class="inp-app">
+                            <label for="description">Description of delegation</label>
+                            <input type="text" id="descInput" placeholder="">
+                        </div>
+                        <div class="inp-app">
+                            <label for="place">Place of delegation</label>
+                            <input type="text" id="placeInput" placeholder="">
+                        </div>
+                        <div class="inp-app">
+                            <label for="month">Month of delegation</label>
+                            <select id="monthInput">
+                                <option value="january">January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                                <option value="may">May</option>
+                                <option value="june">June</option>
+                                <option value="july">July</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select>
+                        </div>
+                        <div class="inp-app">
+                            <label for="piority">Piority</label>
+                            <select id="piorityInput">
+                                <option value="low">low</option>
+                                <option value="medium">medium</option>
+                                <option value="high">high</option>
+                            </select>
+                        </div>
+                        <div class="inp-app">
+                            <label for="assignedto">Assigned To</label>
+                            <input type="text" id="AssignedToInput" placeholder="">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+                <div id="tripsList">
+                </div>
+            </div>
+        </div>
+      </div>
+
+    
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
