@@ -24,29 +24,30 @@ function addTrips(e) {
     }
     
     
-    if (localStorage.getItem("trips") === null) {
+    if (localStorage.getItem('trips') === null) {
         //utworzenie tablicy
         var trip_ar = [];
         //dodanie elemnentu do tablicy
         trip_ar.push(trip);
         //ustawienie locaStorage
-        localStorage.setItem("trips", JSON.stringify(trip_ar));
+        localStorage.setItem('trips', JSON.stringify(trip_ar));
     } else {
         //pobranie z localStorage
-        var trip_ar = JSON.parse(localStorage.getItem("trips"));
+        var trip_ar = JSON.parse(localStorage.getItem('trips'));
         //dodanie trip do tablicy
         trip_ar.push(trip);
-        localStorage.setItem("trips", JSON.stringify(trip_ar));
+        localStorage.setItem('trips', JSON.stringify(trip_ar));
     }
     
     
     //zrestetowanie wpisanych wczesniej wartości
-    document.getElementById("mainInput").reset();
+   document.getElementById("mainInput").reset();
     
     fetchTrips();
     
     e.preventDefault();
 }
+
 
 //usunięcie zadania
 function deleteTrips(place) {
@@ -59,10 +60,15 @@ function deleteTrips(place) {
         }
     }
     
-    localStorage.setItem("trips", JSON.stringify(trips));
+    localStorage.setItem('trips', JSON.stringify(trips));
     
     fetchTrips();
 }
+
+
+
+
+document.body.onload = fetchTrips;
 
 //stworzenie zadania
 function fetchTrips() {
@@ -84,8 +90,8 @@ function fetchTrips() {
             status = trips[i].status;
         
         
-        output.innerHTML += '<div class="well">' +
-                            '<h5>Delegation to: </h5><br><br>' +
+        output.innerHTML += '<div class="row-end">' +
+                            '<h4>Delegation to: </h4><br>' +
                             '<p><span class="label label-info">' + status + '</span></p>' +
                             '<h3>' + description + '</h3>' +
                             '<p><span class=""></span>' + place + '</p>' +
@@ -93,8 +99,7 @@ function fetchTrips() {
                             '<p><span class=""></span>' + piority + '</p>' +
                             '<p><span onclick="deleteTrips(\''+place+'\')" class="btn btn-danger"></span>' + assigned + '</p>' +
                             '</div>';
-                            
-                            
+                                               
     }
 
 }

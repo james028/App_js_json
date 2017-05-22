@@ -1,0 +1,66 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #FFE4E1;
+    color: #000;
+    font-family: 'Droid Sans', sans-serif;
+}
+.title
+{
+    text-align: center;
+    margin: 15px auto 30px;
+}
+.main-app
+{
+    background: #B22222;
+    padding: 40px 30px 20px;
+    border-radius: 5px;
+}
+.inp-app
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-size: 22px;
+}
+.inp-app input
+{
+    height: 40px;
+}
+
+.inp-app select
+{
+    height: 30px;
+}
+.inp-1
+{
+    width: 90%;
+}
+.inp-2
+{
+    width: 50%;
+}
+.inp-3, .inp-4
+{
+    width: 25%;
+}
+.inp-5
+{
+    width: 30%;
+}
+.btn-1
+{
+    margin: 20px auto 10px;
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+}
+.row-end
+{
+    background: #C0C0C0;
+}

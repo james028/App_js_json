@@ -10,25 +10,30 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+      
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet"> 
+      
+    <script src="https://use.fontawesome.com/0e46e58ec0.js"></script>
+
 
   </head>
-  <<body onload="fetchTrips()">
+  <<body>
       
       <div class="container">
         <div class="row">
-            <h2>Lorem Ipsum</h2>
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-10 col-md-offset-1">
                 <div class="main-app">
+                    <h2 class="title">Description of business trips</h2>
                     <form id="mainInput">
-                        <div class="inp-app">
+                        <div class="inp-app inp-1">
                             <label for="description">Description of delegation</label>
-                            <input type="text" id="descInput" placeholder="">
+                            <input type="text" id="descInput" placeholder="Describe the...">
                         </div>
-                        <div class="inp-app">
+                        <div class="inp-app inp-2">
                             <label for="place">Place of delegation</label>
                             <input type="text" id="placeInput" placeholder="">
                         </div>
-                        <div class="inp-app">
+                        <div class="inp-app inp-3">
                             <label for="month">Month of delegation</label>
                             <select id="monthInput">
                                 <option value="january">January</option>
@@ -45,7 +50,7 @@
                                 <option value="december">December</option>
                             </select>
                         </div>
-                        <div class="inp-app">
+                        <div class="inp-app inp-4">
                             <label for="piority">Piority</label>
                             <select id="piorityInput">
                                 <option value="low">low</option>
@@ -53,11 +58,11 @@
                                 <option value="high">high</option>
                             </select>
                         </div>
-                        <div class="inp-app">
+                        <div class="inp-app inp-5">
                             <label for="assignedto">Assigned To</label>
                             <input type="text" id="AssignedToInput" placeholder="">
                         </div>
-                        <button type="submit" class="btn btn-primary">Add</button>
+                        <button type="submit" class="btn btn-primary btn-1">Add</button>
                     </form>
                 </div>
             </div>
