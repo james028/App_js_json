@@ -49,6 +49,23 @@ function addTrips(e) {
 }
 
 
+//zmiana statusu
+function changeStatus(status) {
+   var trips = JSON.parse(localStorage.getItem('trips'));
+    
+    for (var i=0; i < trips.length; i++) {
+        if (trips[i].status == status) {
+            trips[i].status = "Done";
+        }
+    }
+    
+    localStorage.setItem('trips', JSON.stringify(trips));
+    
+    fetchTrips();
+    
+    
+}
+
 //usunięcie zadania
 function deleteTrips(place) {
     var trips = JSON.parse(localStorage.getItem('trips'));
@@ -91,14 +108,17 @@ function fetchTrips() {
         
         
         output.innerHTML += '<div class="row-end">' +
-                            '<h4>Delegation to: </h4><br>' +
-                            '<p><span class="label label-info">' + status + '</span></p>' +
+                            '<p><span class="label-info-1"> Status: ' + status + '</span></p><br>' +
+                            '<h4>Description of the delegation: </h4>' +
                             '<h3>' + description + '</h3>' +
-                            '<p><span class=""></span>' + place + '</p>' +
-                            '<p><span class=""></span>' + month + '</p>' +
-                            '<p><span class=""></span>' + piority + '</p>' +
-                            '<p><span onclick="deleteTrips(\''+place+'\')" class="btn btn-danger"></span>' + assigned + '</p>' +
-                            '</div>';
+                            '<p><i class="fa fa-map-marker fa-1" aria-hidden="true"></i> Place:  ' + place + '</p>' +
+                            '<p><i class="fa fa-calendar fa-1" aria-hidden="true"></i> Month:  ' + month + '</p>' +
+                            '<p><i class="fa fa-paperclip fa-1" aria-hidden="true"></i> Piority:  ' + piority + '</p>' +
+                            '<p><i class="fa fa-user fa-1" aria-hidden="true"></i> Assigned to:  ' + assigned + '</p>' +
+                            '<div class="row-btn">' +
+                            '<p><span onclick="deleteTrips(\''+place+'\')" class="btn btn-danger btn-end">Delete</span></p>' +
+                            '<p><span onclick="changeStatus(\''+status+'\')" class="btn btn-info btn-end">Done</span></p>' +
+                            '</div></div>';
                                                
     }
 

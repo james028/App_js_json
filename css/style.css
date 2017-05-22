@@ -62,5 +62,28 @@ body
 }
 .row-end
 {
-    background: #C0C0C0;
+    background: #FF7F50;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 5px;
+}
+.label-info-1
+{
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    background: lightgreen;
+    padding: 10px;
+}
+.row-btn
+{
+    display: flex;
+}
+.btn-end
+{
+    margin: 10px;
+}
+.fa-1
+{
+    color: blue;
 }
