@@ -8,6 +8,7 @@ function addTrips(e) {
     //pobranie wpisanych wartości
     var desc = document.getElementById("descInput").value,
         placeInp = document.getElementById("placeInput").value,
+        dayInp = document.getElementById("dayInput").value,
         monthInp = document.getElementById("monthInput").value,
         piori = document.getElementById("piorityInput").value,
         assignedTo = document.getElementById("AssignedToInput").value,
@@ -17,6 +18,7 @@ function addTrips(e) {
     var trip = {
         description: desc,
         place: placeInp,
+        day: dayInp,
         month: monthInp,
         piority: piori,
         assigned: assignedTo,
@@ -63,7 +65,6 @@ function changeStatus(status) {
     
     fetchTrips();
     
-    
 }
 
 //usunięcie zadania
@@ -101,6 +102,7 @@ function fetchTrips() {
         
         var description = trips[i].description,
             place = trips[i].place,
+            day = trips[i].day,
             month = trips[i].month,
             piority = trips[i].piority,
             assigned = trips[i].assigned,
@@ -112,7 +114,7 @@ function fetchTrips() {
                             '<h4>Description of the delegation: </h4>' +
                             '<h3>' + description + '</h3>' +
                             '<p><i class="fa fa-map-marker fa-1" aria-hidden="true"></i> Place:  ' + place + '</p>' +
-                            '<p><i class="fa fa-calendar fa-1" aria-hidden="true"></i> Month:  ' + month + '</p>' +
+                            '<p><i class="fa fa-calendar fa-1" aria-hidden="true"></i>' + ' Day: '+ day +  ' Month:  ' + month + '</p>' +
                             '<p><i class="fa fa-paperclip fa-1" aria-hidden="true"></i> Piority:  ' + piority + '</p>' +
                             '<p><i class="fa fa-user fa-1" aria-hidden="true"></i> Assigned to:  ' + assigned + '</p>' +
                             '<div class="row-btn">' +

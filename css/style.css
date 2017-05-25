@@ -14,12 +14,23 @@ body
 {
     text-align: center;
     margin: 15px auto 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 .main-app
 {
-    background: #B22222;
+    background: #7F8C8D;
     padding: 40px 30px 20px;
     border-radius: 5px;
+}
+input
+{
+    background: #34495E;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    padding-left: 10px;
 }
 .inp-app
 {
@@ -30,9 +41,13 @@ body
 }
 .inp-app input
 {
-    height: 40px;
+    height: 60px;
 }
-
+.inp-place
+{
+    height: 50px;
+    margin-bottom: 20px;
+}
 .inp-app select
 {
     height: 30px;
@@ -44,21 +59,52 @@ body
 .inp-2
 {
     width: 50%;
+    height: 50px;
+    margin-bottom: 30px;
 }
-.inp-3, .inp-4
+.date-row
+{
+    display: flex;
+}
+.inp-3
+{
+    width: 15%;
+}
+.inp-day
+{
+    width: 40%;
+    background: #34495E;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+}
+.inp-pio, .inp-month
+{
+    background: #34495E;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+}
+.inp-4
 {
     width: 25%;
 }
 .inp-5
 {
     width: 30%;
+    height: 50px;
 }
 .btn-1
 {
-    margin: 20px auto 10px;
+    margin: 40px auto 10px;
     width: 160px;
     height: 50px;
     font-size: 20px;
+    background: #34A65F;
+}
+.btn-1:hover
+{
+    background: #0F8A5F;
 }
 .row-end
 {
