@@ -1,0 +1,14 @@
+@media (max-width: 540px) {
+    .main-app
+    {
+        width: 100%;
+    }
+    .title
+    {
+        font-size: 22px;
+    }
+    .inp-app
+    {
+        font-size: 16px;
+    }
+}
