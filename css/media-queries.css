@@ -1,3 +1,51 @@
+@media (min-width: 541px) and (max-width: 870px) {
+	.main-app
+    {
+        min-width: 100%;
+        border-radius: 0;
+    }
+    .main-media
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .title
+    {
+        font-size: 22px;
+    }
+    .inp-app
+    {
+        font-size: 16px;
+    }
+    .inp-app input 
+    {
+    height: 45px;
+    }
+    .inp-2
+    {
+        margin-bottom: 5px;
+    }
+    .inp-day
+    {
+    width: 70%;
+    }
+    .inp-3
+    {
+        width: 40%;
+    }
+    .inp-5
+    {
+        height: 60px;
+        width: 200px;
+    }
+    .btn-1
+    {
+    margin: 20px auto 10px;
+    width: 140px;
+    height: 45px;
+    font-size: 18px;
+    }   
+}
 @media (max-width: 540px) {
     .main-app
     {
